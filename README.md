@@ -4,7 +4,7 @@ If your file is correct it will format it with all tabs and spaces requried. If 
 
 ## Usage 1:
 1) `docker build -t validator github.com/AlNadraga/TRPO`
-2) `docker run -d --rm -p 80:80 validator`
+2) `docker run -t --rm -p 80:80 validator`
 3) `curl -s --upload-file filename.json http://localhost`
 
 ## Usage 2:
