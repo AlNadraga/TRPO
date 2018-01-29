@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Start') {
             steps {
-                sh 'docker run -d --rm -p 80:80 validator'
+                sh 'docker run -t --rm -p 80:80 validator'
                 echo 'Start OK'
             }
         }
