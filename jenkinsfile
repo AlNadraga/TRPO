@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker 'validator' } 
+    agent { docker 'TRPO' } 
     stages {
         stage('Building') {
             steps {
