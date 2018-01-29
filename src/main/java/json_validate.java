@@ -32,11 +32,6 @@ public class json_validate {
                  *
                  * @param httpExchange encapsulates a HTTP request received
                  *                     and a response to be generated in one exchange
-<<<<<<< HEAD
-                 *                     
-=======
-                 *
->>>>>>> task2
                  * @throws IOException if Input/Output exception occured
                  */
                 public void handle(HttpExchange httpExchange) throws IOException {
@@ -59,11 +54,8 @@ public class json_validate {
 
                         Error.addProperty("errorCode",ex.hashCode());
                         Error.addProperty("errorMessage",errorSplittedString[1]);
-<<<<<<< HEAD
                         Error.addProperty("errorPlace", "at"+errorSplittedString[2]);
-=======
                         Error.addProperty("errorPlace", "at "+errorSplittedString[2]);
->>>>>>> task2
                         Error.addProperty("resource",filename);
                         Error.addProperty("id",connectionId);
                         responseString = gson.toJson(Error);
